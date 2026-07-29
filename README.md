@@ -2,7 +2,7 @@
 
 Réplica de la sección de testimonios de [freeCodeCamp](https://www.freecodecamp.org/), construida con **React 19** y **Vite 8** como ejercicio de práctica de componentes reutilizables y props.
 
-![Vista previa del proyecto](./screenshot.png)
+![Vista previa del proyecto](./public/readmeSreanShotCloneCards.PNG)
 
 > 🔗 **Demo en vivo:** [clone-cards-mu.vercel.app](https://clone-cards-mu.vercel.app)
 
@@ -63,7 +63,7 @@ clonecards/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/juan-camilo-piamba-uribe/clonecards.git
+git clone https://github.com/webcartaonline/CloneCards.git
 
 # 2. Acceder al directorio
 cd clonecards
@@ -112,7 +112,7 @@ Añadir una tarjeta nueva solo requiere dos pasos:
 
 **Juan Camilo Piamba Uribe**
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/juan-camilo-piamba-uribe)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/webcartaonline)
 
 ---
 
