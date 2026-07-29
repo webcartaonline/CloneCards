@@ -1,6 +1,7 @@
-# Clone Cards — freeCodeCamp Testimonials
-
-Réplica de la sección de testimonios de [freeCodeCamp](https://www.freecodecamp.org/), construida con **React 19** y **Vite 8** como ejercicio de práctica de componentes reutilizables y props.
+<div align="center">
+<h1>Clone Cards — freeCodeCamp Testimonials</h1>
+<p>Réplica de la sección de testimonios de <a href="https://www.freecodecamp.org"> freeCodeCamp </a>, construida con <strong>React 19</strong> y <strong>Vite 8</strong> como ejercicio de práctica de componentes reutilizables y props.</p>
+</div>
 
 ![Vista previa del proyecto](./public/readmeSreanShotCloneCards.PNG)
 
@@ -74,8 +75,6 @@ npm install
 # 4. Iniciar el servidor de desarrollo
 npm run dev
 ```
-
-El servidor arrancará en `http://localhost:5173` por defecto.
 
 ### Scripts disponibles
 
