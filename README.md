@@ -1,18 +1,121 @@
-# React + Vite
+# Clone Cards — freeCodeCamp Testimonials
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Réplica de la sección de testimonios de [freeCodeCamp](https://www.freecodecamp.org/), construida con **React 19** y **Vite 8** como ejercicio de práctica de componentes reutilizables y props.
 
-Currently, two official plugins are available:
+![Vista previa del proyecto](./screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> 🔗 **Demo en vivo:** [clone-cards-mu.vercel.app](https://clone-cards-mu.vercel.app)
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Descripción
 
-Note: This will impact Vite dev & build performances.
+La aplicación muestra tarjetas de testimonio de antiguos alumnos de freeCodeCamp. Cada tarjeta es un componente `<Testimonial />` independiente que recibe sus datos a través de props, lo que permite añadir, eliminar o modificar testimonios sin tocar la lógica del componente.
 
-## Expanding the ESLint configuration
+**Objetivos de aprendizaje cubiertos:**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Creación de componentes funcionales en React.
+- Paso de datos mediante props.
+- Importación dinámica de imágenes con `import.meta.glob` de Vite.
+- Estilizado con CSS modular (un archivo de estilos por componente).
+
+---
+
+## Tecnologías
+
+| Categoría      | Herramienta                          |
+| -------------- | ------------------------------------ |
+| Librería UI    | React 19                             |
+| Bundler        | Vite 8                               |
+| Compilador     | React Compiler (via `@rolldown/plugin-babel`) |
+| Linter         | ESLint 10                            |
+| Despliegue     | Vercel                               |
+
+---
+
+## Estructura del proyecto
+
+```
+clonecards/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── assets/
+│   │   └── img/            # Imágenes de los testimonios (.png)
+│   ├── components/
+│   │   └── Testimonial.jsx  # Componente reutilizable de tarjeta
+│   ├── styles/
+│   │   ├── index.css        # Estilos globales y variables CSS
+│   │   └── Testimonial.css  # Estilos del componente Testimonial
+│   ├── App.jsx              # Componente raíz
+│   └── main.jsx             # Punto de entrada
+├── index.html
+├── vite.config.js
+├── package.json
+└── README.md
+```
+
+---
+
+## Instalación y uso
+
+**Requisitos previos:** Node.js ≥ 20.19
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/juan-camilo-piamba-uribe/clonecards.git
+
+# 2. Acceder al directorio
+cd clonecards
+
+# 3. Instalar dependencias
+npm install
+
+# 4. Iniciar el servidor de desarrollo
+npm run dev
+```
+
+El servidor arrancará en `http://localhost:5173` por defecto.
+
+### Scripts disponibles
+
+| Comando           | Descripción                            |
+| ----------------- | -------------------------------------- |
+| `npm run dev`     | Inicia el servidor de desarrollo       |
+| `npm run build`   | Genera la build de producción          |
+| `npm run preview` | Previsualiza la build de producción    |
+| `npm run lint`    | Ejecuta ESLint sobre el proyecto       |
+
+---
+
+## Cómo añadir un nuevo testimonio
+
+Añadir una tarjeta nueva solo requiere dos pasos:
+
+1. Colocar la imagen del testimonio en `src/assets/img/` con formato `.png`.
+2. Añadir un nuevo componente `<Testimonial />` en `App.jsx` con las props correspondientes:
+
+```jsx
+<Testimonial
+  name="Nombre"
+  country="País"
+  image="NombreArchivo"   // Sin extensión, debe coincidir con el .png
+  role="Cargo profesional"
+  company="Empresa"
+  testimonial="Texto del testimonio."
+/>
+```
+
+---
+
+## Autor
+
+**Juan Camilo Piamba Uribe**
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/juan-camilo-piamba-uribe)
+
+---
+
+## Licencia
+
+Este proyecto es un ejercicio de aprendizaje y no está afiliado a freeCodeCamp.
