@@ -1,8 +1,5 @@
 import '../styles/Testimonial.css';
 
-	/*This section of code imports many images from a folder
-	at once, so they can be used dynamically in React with Vite.*/
-
 const imageModules = import.meta.glob('../assets/img/*.png', {
     eager: true,
     import: 'default'
